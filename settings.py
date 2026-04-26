@@ -28,3 +28,7 @@ class Settings:
         self.fleet_speed = 5
         self.fleet_direction = 1
         self.fleet_drop_speed = 40
+
+        self.button_w = 200
+        self.button_h = 50
+        self.button_color = (0,135,50)
