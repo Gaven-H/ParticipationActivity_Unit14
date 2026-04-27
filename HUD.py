@@ -59,7 +59,6 @@ class HUD:
         self.hi_score_rect = self.hi_score_image.get_rect()
         self.hi_score_rect.midtop = (self.boundaries.centerx, self.padding)
 
-<<<<<<< HEAD
     def update_level(self) -> None:
         level_str = f'Level: {self.game_stats.level: ,.0f}'
         self.level_image = self.font.render(level_str, True,
@@ -81,9 +80,7 @@ class HUD:
         self.screen.blit(self.score_image, self.score_rect)
         self.screen.blit(self.level_image, self.level_rect)
         self._draw_lives()
-=======
     def draw(self) -> None:
         self.screen.blit(self.hi_score_image, self.hi_score_rect)
         self.screen.blit(self.max_score_image, self.max_score_rect)
         self.screen.blit(self.score_image, self.score_rect)
->>>>>>> 4a6648f72e44e95db041847eb6e6bd4cdf94513b
