@@ -16,7 +16,6 @@ class HUD:
             self.settings.HUD_font_size)
         self.padding = 20
         self.update_scores()
-<<<<<<< HEAD
         self._setup_life_image()
         self.update_level()
 
@@ -26,10 +25,8 @@ class HUD:
             self.settings.ship_w, self.settings.ship_h
             ))
         self.life_rect = self.life_image.get_rect()
-=======
         #self.setup_life_image()
         #self.update_level()
->>>>>>> 4a6648f72e44e95db041847eb6e6bd4cdf94513b
 
     def update_scores(self) -> None:
         self._update_score()
