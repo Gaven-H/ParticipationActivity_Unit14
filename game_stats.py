@@ -1,13 +1,14 @@
 # from pathlib import Path
 import json
+# from alien_invasion import AlienInvasion
 
-from typing import TYPE_CHECKING
+# from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from alien_invasion import AlienInvasion
+# if TYPE_CHECKING:
+    
 
 class GameStats():
-    def __init__(self, game: 'AlienInvasion') -> None:
+    def __init__(self, game) -> None:
         self.game = game
         self.settings = game.settings
         self.max_score = 0
@@ -17,7 +18,7 @@ class GameStats():
     
     def init_saved_scores(self) -> None:
         self.path = self.settings.scores_file
-        if self.path.exists() and self.path.stat.__sizeof__() > 80:
+        if self.path.exists() and self.path.stat.__sizeof__() > 20:
             contents = self.path.read_text()
             scores = json.loads(contents)
             self.hi_score = scores.get('hi_score', 0)
